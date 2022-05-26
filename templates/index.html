@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form
+        {
+            padding-left: 50px;
+        }
+        h1
+        {
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello There</h1>
+    <br>
+    <pre>
+        This is a simple flask application!
+
+        It shows how data can be taken via a form and stored to  the  MongoDb 
+        in the form of collections. The database has been setup local for now
+        Please see the attatch screenshots in the git repository <a href="https://www.youtube.com/" target="_blank">Click Here</a>
+
+        For now, since the database is not connecetd it will return the data 
+        you enter as a "Json Document" use <a href="https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd">This</a> extension to view it proper. 
+    </pre>
+    <br>
+    <form action="/" method="POST">
+        <label for="Enter Name">Enter Name</label>
+        <input type="text" name="Name" placeholder="Enter name here">
+        <br>
+        <br>
+        <label for="Enter Age">Enter Age</label>
+        <input type="text" name="Age" placeholder="Enter age here">
+        <br>
+        <br>
+        <label for="Country">Enter Country Name</label>
+        <input type="text" name="Country" placeholder="Enter Country Name">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
